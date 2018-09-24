@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+	
+  <servlet>
+    <servlet-name>AddServlet</servlet-name>
+    <servlet-class>jspservlet.servlet.AddServlet</servlet-class>
+  </servlet>
+  
+    <servlet>
+  	<servlet-name>AllcontactsServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.AllcontactsServlet</servlet-class>
+  </servlet>
+  
+  	<servlet>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>jspservlet.servlet.DeleteServlet</servlet-class>
+  </servlet>
+    
+   <servlet>
+  	<servlet-name>DisplayServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.DisplayServlet</servlet-class>
+  </servlet>
+  
+    <servlet>
+  	<servlet-name>ModifyServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.ModifyServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>SearchServlet</servlet-name>
+  	<servlet-class>jspservlet.servlet.SearchServlet</servlet-class>
+  </servlet>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  
+  <servlet-mapping>
+    <servlet-name>AddServlet</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>DisplayServlet</servlet-name>
+    <url-pattern>/display</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>AllcontactsServlet</servlet-name>
+    <url-pattern>/all</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>ModifyServlet</servlet-name>
+    <url-pattern>/modify</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+
+
+
