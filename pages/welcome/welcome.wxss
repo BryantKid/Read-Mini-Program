@@ -1,0 +1,32 @@
+.container{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+}
+.user-avatar{
+  height: 100rpx;
+  width: 100rpx;
+  margin-top: 160rpx;
+}
+.username{
+  margin-top: 100rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.moto{
+  font-size: 22rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  color: #405f80;
+}
+.moto-container{
+  margin-top: 200rpx;
+  border: 1rpx solid #405f80;
+  height: 80rpx;
+  width: 200rpx;
+  border-radius: 5px;
+  text-align: center;
+}
+page{
+  background-color: #b3d4db
+}

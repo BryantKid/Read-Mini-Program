@@ -1,0 +1,19 @@
+<!--pages/posts/post-detail/post-detail.wxml-->
+
+<view class="detail">
+  <image src="{{imgSrc}}" class="detail-image"></image>
+  <view class="avatar">
+    <image src="{{avatar}}" class="avatar-image"></image>
+    <text class="avatar-name">{{author}}</text>
+    <text class="avatar-date">发表于</text>
+    <text class="avatar-date">{{dateTime}}</text>
+  </view>
+  <text class="contant">{{title}}</text>
+  <view class="post-icon">
+    <image src="/images/icon/share.png" class="icon"></image>
+    <image wx:if="{{collectdata}}" src="/images/icon/collection.png" class="icon" bindtap="collectchange"></image>
+    <image wx:else src="/images/icon/collection-anti.png" class="icon" bindtap="collectchange"></image>
+  </view>
+  <view class="horizon"></view>
+  <text class="detail">{{detail}}</text>
+</view>
